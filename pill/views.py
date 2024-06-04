@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from rest_framework import generics
+from .models import Vitamins
+from .serializers import VitaminSerializer
 
-# Create your views here.
+
+class VitaminListView(generics.ListAPIView):
+    serializer_class = VitaminSerializer
+    queryset = Vitamins.objects.all()
