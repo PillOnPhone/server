@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'user',
     'pill',
     'pharmacy',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
